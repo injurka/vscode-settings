@@ -60,6 +60,8 @@
   "workbench.editor.limit.value": 5,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
