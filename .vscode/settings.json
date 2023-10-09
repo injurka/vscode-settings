@@ -1,17 +1,21 @@
 {
   // Visuals
-  "workbench.activityBar.visible": true,
   "workbench.editor.tabCloseButton": "right",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Celestial",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Celestial",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
   "workbench.commandPalette.history": 100,
   "workbench.list.horizontalScrolling": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
 
 
 
@@ -25,13 +29,12 @@
   "editor.cursorBlinking": "phase",
   "editor.linkedEditing": true,
   "editor.formatOnSave": true,
-  "eslint.format.enable": true,
   "editor.formatOnPaste": true,
   "editor.minimap.autohide": true,
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.guides.bracketPairs": "active", 
+  "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "on",
   "editor.multiCursorModifier": "alt",
@@ -48,20 +51,14 @@
     "source.fixAll.stylelint": true
   },
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "window.autoDetectColorScheme": true,
+  "window.autoDetectColorScheme": false,
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -72,6 +69,7 @@
   "scm.diffDecorationsGutterWidth": 2,
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
+  "files.autoSave": "afterDelay",
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
@@ -97,14 +95,8 @@
   "material-icon-theme.activeIconPack": "react_redux",
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "eslint"],
   "javascript.updateImportsOnFileMove.enabled": "always",
   "auto-close-tag.fullMode": true,
   "auto-close-tag.SublimeText3Mode": true,
@@ -114,6 +106,7 @@
 
 
   // ESLint config
+  "eslint.format.enable": true,
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
