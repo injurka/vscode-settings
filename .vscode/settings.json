@@ -1,7 +1,5 @@
 {
-  "workbench.colorTheme": "Celestial",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "icons-carbon",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
@@ -14,9 +12,14 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
-  "workbench.activityBar.location": "top",
   "workbench.editor.tabActionLocation": "right",
+  "workbench.activityBar.location": "top",
+  // 
   // Code [editor]
+  // 
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -35,25 +38,20 @@
   "[markdown]": {
     "editor.defaultFormatter": "vscode.markdown-language-features"
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "editor.fontWeight": "400",
   "editor.letterSpacing": 0,
   "editor.cursorBlinking": "phase",
+  "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -65,11 +63,10 @@
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "on",
   "editor.multiCursorModifier": "alt",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
-  "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.enabled": true,
   "editor.hover.sticky": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
@@ -84,7 +81,8 @@
   "window.autoDetectColorScheme": false,
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "window.customTitleBarVisibility": "auto",
+  "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -115,7 +113,9 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
+  // 
   // Extension configs
+  // 
   "material-icon-theme.activeIconPack": "react_redux",
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
@@ -152,8 +152,12 @@
     }
   },
   "cSpell.language": "en,ru",
+  "projectManager.sortList": "Saved",
   "vitest.enable": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  // 
   // ESLint config
+  // 
   "eslint.format.enable": true,
   "eslint.codeAction.showDocumentation": {
     "enable": true
@@ -209,125 +213,22 @@
     "jsonc",
     "yaml"
   ],
+  // 
   // Terminal
+  // 
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "JetBrains Mono",
-  "terminal.integrated.defaultProfile.osx": "/usr/bin/zsh-5.9",
-  "terminal.integrated.shell.linux": "/usr",
-  "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "zsh",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
-  // Custom colors
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "support.variable.property"
-        ],
-        "settings": {
-          "foreground": "#f8809c"
-        }
-      },
-      {
-        "scope": [
-          "keyword.control.flow"
-        ],
-        "settings": {
-          "foreground": "#8072ff"
-        }
-      },
-      {
-        "scope": [
-          "string.quoted",
-          "string",
-          "punctuation.definition.string.begin",
-          "punctuation.definition.string.end"
-        ],
-        "settings": {
-          "foreground": "#F9998F"
-        }
-      },
-      {
-        "name": "storage",
-        "scope": [
-          "storage.type.function"
-        ],
-        "settings": {
-          "foreground": "#1272cc"
-        }
-      },
-      {
-        "name": "storage",
-        "scope": [
-          "storage.type.function"
-        ],
-        "settings": {
-          "foreground": "#1272cc"
-        }
-      },
-      {
-        "name": "entity",
-        "scope": [
-          "entity.name.type.class"
-        ],
-        "settings": {
-          "foreground": "#fc8b53"
-        }
-      },
-      {
-        "name": "entity",
-        "scope": [
-          "entity.name.type"
-        ],
-        "settings": {
-          "foreground": "#12b0cc"
-        }
-      },
-      {
-        "name": "support",
-        "scope": [
-          "support.type.property-name"
-        ],
-        "settings": {
-          "foreground": "#1297cc"
-        }
-      },
-      {
-        "name": "support",
-        "scope": [
-          "support.type.property-name.css"
-        ],
-        "settings": {
-          "foreground": "#1297cc"
-        }
-      },
-      {
-        "name": "variable",
-        "scope": [
-          "variable.other.property",
-          "variable.other.object"
-        ],
-        "settings": {
-          "foreground": "#2c52bb"
-        }
-      },
-      {
-        "name": "keyword",
-        "scope": [
-          "keyword.operator.type"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
-  // updated 2023-09-27 09:35
-  // https://github.com/antfu/vscode-file-nesting-config
+  "editor.semanticHighlighting.enabled": true,
+  // 
+  // Explorer
+  // https://github.com/antfu/vscode-file-nesting-config (updated 2023-09-27 09:35)
+  // 
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
