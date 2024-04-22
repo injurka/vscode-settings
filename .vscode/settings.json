@@ -14,6 +14,7 @@
   "workbench.editor.limit.value": 5,
   "workbench.editor.tabActionLocation": "right",
   "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "xSolare Dark",
   // 
   // Code [editor]
   // 
@@ -45,9 +46,9 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
+  "editor.fontFamily": "Maple Mono, monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 18,
   "editor.fontWeight": "400",
   "editor.letterSpacing": 0,
   "editor.cursorBlinking": "phase",
@@ -153,7 +154,6 @@
   },
   "cSpell.language": "en,ru",
   "projectManager.sortList": "Saved",
-  "vitest.enable": true,
   "security.workspace.trust.untrustedFiles": "open",
   // 
   // ESLint config
